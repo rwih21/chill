@@ -28,6 +28,7 @@ body {
   /* margin: 0 auto; */
   display: flex;
   justify-content: center;
+  margin: 181px 0;
 }
 
 .login {
