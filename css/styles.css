@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed; /* makes bg images fixed, cover whole*/
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0; /* locks bg to the top */
+  left: 0; /* locks bg to the left */
+}
+
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
