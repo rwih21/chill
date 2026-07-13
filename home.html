@@ -37,11 +37,18 @@
                 </p>
             </div>
             <div class="cta">
-                <button class="primary">Mulai</button>
-                <button class="secondary">
-                    <img src="./assets/information-outline.png" alt="">
-                    <div>Selengkapnya</div>
-                </button>
+                <div class="left">
+                    <button class="primary">Mulai</button>
+                    <button class="secondary">
+                        <img src="./assets/information-outline.png" alt="">
+                        <div>Selengkapnya</div>
+                    </button>
+                    <div class="age-tag">18+</div>
+                </div>
+                <div class="right">
+                    <div class="vol"><img class="volume-icon" src="./assets/volume-off.png" alt=""></div>
+                </div>
+
             </div>
         </div>
 
@@ -183,8 +190,8 @@
         position: absolute;
         bottom: 80px;
         /* left: 80px; */
-        max-width: 668px;
         margin: 0 80px;
+        width: 89%;
     }
 
     .home .hero-texts h1 {
@@ -193,12 +200,18 @@
 
     .home .hero-texts p {
         margin-bottom: 40px;
+        max-width: 668px;
+    }
+
+    .home .cta .left {
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     .home .cta {
         display: flex;
-        gap: 10px;
-
+        justify-content: space-between;
     }
 
     .home .cta button {
@@ -224,6 +237,25 @@
         color: white;
         font-family: "Lato", sans-serif;
 
+    }
+
+    .home .cta .age-tag {
+        padding: 10px;
+        border: 1px solid #C1C2C4;
+        color: #C1C2C4;
+        border-radius: 24px;
+    }
+
+    .home .cta .vol {
+        padding: 13px;
+        border: 1px solid #C1C2C4;
+        color: #C1C2C4;
+        border-radius: 24px;
+    }
+
+    .home .cta .volume-icon {
+        width: 18px;
+        height: 18px;
     }
 
     nav {
