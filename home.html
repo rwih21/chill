@@ -29,10 +29,12 @@
         <div class="hero-info">
             <div class="hero-texts">
                 <h1>Duty After School</h1>
-                <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai
+                <p>
+                    Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai
                     merekrut
                     lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
-                    dalam perang.</p>
+                    dalam perang.
+                </p>
             </div>
             <div class="cta">
                 <button class="primary">Mulai</button>
@@ -46,44 +48,45 @@
     </div>
 
     <div class="continue-watching-section">
+        <h1>Melanjutkan Tonton Film</h1>
         <div class="cards">
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/image223.png" alt="">
                 <div class="info">
-                    <h1>Title</h1>
+                    <h1>Don't Look Up</h1>
                     <div class="rating">
-                        <img src="" alt="">
-                        <div class="rate"></div>
+                        <img src="./assets/rate.png" alt="">
+                        <div class="rate">4.5/5</div>
                     </div>
                 </div>
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/image233.png" alt="">
                 <div class="info">
-                    <h1>Title</h1>
+                    <h1>The Batman</h1>
                     <div class="rating">
-                        <img src="" alt="">
-                        <div class="rate"></div>
+                        <img src="./assets/rate.png" alt="">
+                        <div class="rate">4.2/5</div>
                     </div>
                 </div>
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/image219.png" alt="">
                 <div class="info">
-                    <h1>Title</h1>
+                    <h1>Blue Lock</h1>
                     <div class="rating">
-                        <img src="" alt="">
-                        <div class="rate"></div>
+                        <img src="./assets/rate.png" alt="">
+                        <div class="rate">4.6/5</div>
                     </div>
                 </div>
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/image224.png" alt="">
                 <div class="info">
-                    <h1>Title</h1>
+                    <h1>A Man Called Otto</h1>
                     <div class="rating">
-                        <img src="" alt="">
-                        <div class="rate"></div>
+                        <img src="./assets/rate.png" alt="">
+                        <div class="rate">4.4/5</div>
                     </div>
                 </div>
             </div>
@@ -91,53 +94,43 @@
     </div>
 
     <div class="top-rated-section">
+        <h1>Top Rating Film dan Series Hari ini</h1>
         <div class="cards">
             <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
+                <img src="./assets/Frame74.png" alt="">
             </div>
             <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
+                <img src="./assets/Frame78.png" alt="">
             </div>
             <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
+                <img src="./assets/Frame76.png" alt="">
             </div>
             <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
+                <img src="./assets/Frame79.png" alt="">
             </div>
             <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
-            </div>
-            <div class="film-card">
-                <div class="tag">Episode Baru</div>
-                <img src="" alt="">
+                <img src="./assets/Frame77.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="trending-section">
+        <h1>Film Trending</h1>
         <div class="cards">
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame80.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame81.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame82.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame83.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
-            </div>
-            <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame84.png" alt="">
             </div>
         </div>
     </div>
@@ -177,15 +170,21 @@
         font-family: "Lato", sans-serif;
     }
 
+    .home .hero-section {
+        position: relative;
+    }
+
     .home .hero-image {
         width: 100%;
+        display: block;
         /* position: relative; */
-        z-index: -50;
+        /* z-index: -50; */
     }
 
     .home .hero-info {
         position: absolute;
-        top: 60%;
+        bottom: 80px;
+        /* left: 80px; */
         max-width: 668px;
         margin: 0 80px;
     }
@@ -202,6 +201,11 @@
         display: flex;
         gap: 10px;
 
+    }
+
+    .home .cta button {
+        border: none;
+        cursor: pointer;
     }
 
     .home .cta .primary {
@@ -250,5 +254,51 @@
     nav .left .logo {
         height: 44px;
         width: auto;
+    }
+
+    .home .continue-watching-section {
+        padding: 40px 80px;
+    }
+
+    .home .continue-watching-section .film-card .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .home .continue-watching-section .film-card img {
+        /* z-index: -5; */
+    }
+
+    .home .continue-watching-section .film-card .info h1 {
+        font-size: 18px;
+    }
+
+    .home .continue-watching-section .film-card .info .rating {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .home .continue-watching-section .film-card .info .rating img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .home .continue-watching-section .cards {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .home .top-rated-section, .home .trending-section {
+        padding: 40px 80px;
+    }
+
+    .home .top-rated-section .cards, .home .trending-section .cards {
+        display: flex;
+        gap: 28px;
+        justify-content: center;
     }
 </style>
