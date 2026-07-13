@@ -24,18 +24,25 @@
     </nav>
 
     <div class="hero-section">
-        <img class="hero-image" src="" alt="">
+        <img class="hero-image" src="./assets/home-hero.png" alt="home hero image">
 
-        <div class="hero-texts">
-            <h1>Duty After School</h1>
-            <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut
-                lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
-                dalam perang.</p>
+        <div class="hero-info">
+            <div class="hero-texts">
+                <h1>Duty After School</h1>
+                <p>Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai
+                    merekrut
+                    lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
+                    dalam perang.</p>
+            </div>
+            <div class="cta">
+                <button class="primary">Mulai</button>
+                <button class="secondary">
+                    <img src="./assets/information-outline.png" alt="">
+                    <div>Selengkapnya</div>
+                </button>
+            </div>
         </div>
-        <div class="cta">
-            <button>Mulai</button>
-            <button>Selengkapnya</button>
-        </div>
+
     </div>
 
     <div class="continue-watching-section">
@@ -166,12 +173,62 @@
     .home {
         background-color: #2F3334;
         color: white;
+        margin: 0;
+        font-family: "Lato", sans-serif;
+    }
+
+    .home .hero-image {
+        width: 100%;
+        /* position: relative; */
+        z-index: -50;
+    }
+
+    .home .hero-info {
+        position: absolute;
+        top: 60%;
+        max-width: 668px;
+        margin: 0 80px;
+    }
+
+    .home .hero-texts h1 {
+        margin-bottom: 20px;
+    }
+
+    .home .hero-texts p {
+        margin-bottom: 40px;
+    }
+
+    .home .cta {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .home .cta .primary {
+        border-radius: 48px;
+        padding: 10px 26px;
+        background-color: #0F1E93;
+        color: white;
+        font-family: "Lato", sans-serif;
+    }
+
+    .home .cta .secondary {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 48px;
+        padding: 10px 26px;
+        background-color: #22282A;
+        color: white;
+        font-family: "Lato", sans-serif;
+
     }
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 25px 80px;
     }
 
     nav .left,
