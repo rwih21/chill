@@ -7,7 +7,7 @@
     <title>Home</title>
 </head>
 
-<body>
+<body class="home">
     <nav>
         <div class="left">
             <img class="logo" src="./assets/Logo.svg" alt="chill">
@@ -161,3 +161,37 @@
 </body>
 
 </html>
+
+<style>
+    .home {
+        background-color: #2F3334;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .left,
+    nav .right,
+    nav .left .menu {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    nav .left {
+        gap: 80px;
+    }
+
+    nav .left .menu {
+        gap: 80px;
+    }
+
+    nav .left .logo {
+        height: 44px;
+        width: auto;
+    }
+</style>
