@@ -136,24 +136,22 @@
     </div>
 
     <div class="new-release-section">
+        <h1>Rilis Terbaru</h1>
         <div class="cards">
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame84.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame85.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame77.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame79.png" alt="">
             </div>
             <div class="film-card">
-                <img src="" alt="">
-            </div>
-            <div class="film-card">
-                <img src="" alt="">
+                <img src="./assets/Frame86.png" alt="">
             </div>
         </div>
     </div>
@@ -260,15 +258,26 @@
         padding: 40px 80px;
     }
 
+    .home .continue-watching-section .film-card {
+        position: relative;
+    }
+
+    .home .continue-watching-section .film-card img {
+        display: block;
+        width: 100%;
+    }
+
     .home .continue-watching-section .film-card .info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 16px;
-    }
+        box-sizing: border-box;
 
-    .home .continue-watching-section .film-card img {
-        /* z-index: -5; */
+        position: absolute;
+        bottom: -7%;
+        left: 0;
+        width: 100%;
     }
 
     .home .continue-watching-section .film-card .info h1 {
@@ -292,11 +301,15 @@
         justify-content: center;
     }
 
-    .home .top-rated-section, .home .trending-section {
+    .home .top-rated-section,
+    .home .trending-section,
+    .home .new-release-section {
         padding: 40px 80px;
     }
 
-    .home .top-rated-section .cards, .home .trending-section .cards {
+    .home .top-rated-section .cards,
+    .home .trending-section .cards,
+    .home .new-release-section .cards {
         display: flex;
         gap: 28px;
         justify-content: center;
