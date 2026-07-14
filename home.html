@@ -170,66 +170,44 @@
                 <p>@2023 Chill All Rights Reserved.</p>
             </div>
             <div class="footer-heading-container-1">
-                <h2>Genre</h2>
-
-                <div class="genre-grid">
-                    <a href="#">Aksi</a>
-                    <a href="#">Anak-anak</a>
-                    <a href="#">Anime</a>
-                    <a href="#">Britania</a>
-
-                    <a href="#">Drama</a>
-                    <a href="#">Fantasi Ilmiah & Fantasi</a>
-                    <a href="#">Kejahatan</a>
-                    <a href="#">KDrama</a>
-
-                    <a href="#">Komedi</a>
-                    <a href="#">Petualangan</a>
-                    <a href="#">Perang</a>
-                    <a href="#">Romantis</a>
-
-                    <a href="#">Sain & Alam</a>
-                    <a href="#">Thriller</a>
-                </div>
-                <!-- <div class="footer-heading footer-1">
+                <div class="footer-heading">
                     <h2>Genre</h2>
                     <a href="#">Aksi</a>
                     <a href="#">Anak-anak</a>
                     <a href="#">Anime</a>
                     <a href="#">Britania</a>
                 </div>
-                <div class="footer-heading footer-2">
+
+                <div class="footer-heading">
+                    <h2>&nbsp;</h2>
                     <a href="#">Drama</a>
                     <a href="#">Fantasi Ilmiah & Fantasi</a>
                     <a href="#">Kejahatan</a>
                     <a href="#">KDrama</a>
                 </div>
-                <div class="footer-heading footer-3">
+
+                <div class="footer-heading">
+                    <h2>&nbsp;</h2>
                     <a href="#">Komedi</a>
                     <a href="#">Petualangan</a>
                     <a href="#">Perang</a>
                     <a href="#">Romantis</a>
                 </div>
-                <div class="footer-heading footer-4">
-                    <a href="#">Sain & Alam</a>
+
+                <div class="footer-heading">
+                    <h2>&nbsp;</h2>
+                    <a href="#">Sains & Alam</a>
                     <a href="#">Thriller</a>
-                </div> -->
+                </div>
             </div>
             <div class="footer-heading-container-2">
-                <h2>Bantuan</h2>
-                <div class="bantuan-grid">
-                    <a href="#">FAQ</a>
-                    <a href="#">Kontak Kami</a>
-                    <a href="#">Privasi</a>
-                    <a href="#">Syarat & Ketentuan</a>
-                </div>
-                <!-- <div class="footer-heading footer-5">
+                <div class="footer-heading">
                     <h2>Bantuan</h2>
                     <a href="#">FAQ</a>
                     <a href="#">Kontak Kami</a>
                     <a href="#">Privasi</a>
                     <a href="#">Syarat & Ketentuan</a>
-                </div> -->
+                </div>
             </div>
 
         </div>
@@ -242,56 +220,61 @@
 <style>
     footer {
         padding: 60px 80px;
+        border-top: 1px solid #3D4142;
     }
 
     .footer-container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-logo {
+        width: 163px;
+        height: auto;
+    }
+
+    .footer-logo-container p {
+        color: #C1C2C4;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .footer-heading-container-1 {
+        display: flex;
+        gap: 48px;
+    }
+
+    .footer-heading-container-2 {
+        display: flex;
     }
 
     .footer-heading {
         display: flex;
         flex-direction: column;
-    }
-
-    .footer-logo-container {
-        margin-right: 215px;
-    }
-
-    .footer-heading-container-1 {
-        margin-right: 160px;
-    }
-    .footer-heading-container-1 h2, .footer-heading-container-2 h2 {
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-
-    footer .footer-container a {
-        color: #C1C2C4;
-        text-decoration: none;
-    }
-    footer .footer-container a:hover {
-        text-decoration: underline;
-    }
-
-    footer .genre-grid {
-        display: grid;
-        grid-template-columns: max-content max-content max-content max-content;
-        gap: 13px 28px;
-    }
-
-    footer .bantuan-grid {
-        display: grid;
-        grid-template-columns: max-content;
         gap: 13px;
     }
 
-    .footer-logo {
-        margin-bottom: 26px;
+    .footer-heading h2 {
+        margin: 0 0 12px;
+        font-size: 16px;
+        font-weight: 700;
     }
 
-    .footer-logo-container p {
+    .footer-heading a {
         color: #C1C2C4;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .footer-heading a:hover {
+        text-decoration: underline;
     }
 
     .home {
