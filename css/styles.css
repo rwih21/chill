@@ -5,7 +5,7 @@
 }
 
 .lato {
-    font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -117,6 +117,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   border-radius: 24px;
+  border: none;
 }
 
 .login .google {
@@ -129,7 +130,6 @@ body {
   color: white;
   justify-content: center;
 }
-
 
 /* Register Form */
 .register-container {
@@ -192,6 +192,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   border-radius: 24px;
+  border: none;
 }
 
 .register .google {
