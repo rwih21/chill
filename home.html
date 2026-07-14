@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="right">
-            <img class="profile" src="" alt="">
-            <img class="dropdown" src="" alt="">
+            <img class="profile" src="./assets/profile-icon.png" alt="">
+            <img class="arrow-down" src="./assets/arrow-down.png" alt="">
         </div>
     </nav>
 
@@ -163,11 +163,137 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <img class="footer-logo" src="./assets/Logo.svg" alt="">
+                <p>@2023 Chill All Rights Reserved.</p>
+            </div>
+            <div class="footer-heading-container-1">
+                <h2>Genre</h2>
+
+                <div class="genre-grid">
+                    <a href="#">Aksi</a>
+                    <a href="#">Anak-anak</a>
+                    <a href="#">Anime</a>
+                    <a href="#">Britania</a>
+
+                    <a href="#">Drama</a>
+                    <a href="#">Fantasi Ilmiah & Fantasi</a>
+                    <a href="#">Kejahatan</a>
+                    <a href="#">KDrama</a>
+
+                    <a href="#">Komedi</a>
+                    <a href="#">Petualangan</a>
+                    <a href="#">Perang</a>
+                    <a href="#">Romantis</a>
+
+                    <a href="#">Sain & Alam</a>
+                    <a href="#">Thriller</a>
+                </div>
+                <!-- <div class="footer-heading footer-1">
+                    <h2>Genre</h2>
+                    <a href="#">Aksi</a>
+                    <a href="#">Anak-anak</a>
+                    <a href="#">Anime</a>
+                    <a href="#">Britania</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <a href="#">Drama</a>
+                    <a href="#">Fantasi Ilmiah & Fantasi</a>
+                    <a href="#">Kejahatan</a>
+                    <a href="#">KDrama</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <a href="#">Komedi</a>
+                    <a href="#">Petualangan</a>
+                    <a href="#">Perang</a>
+                    <a href="#">Romantis</a>
+                </div>
+                <div class="footer-heading footer-4">
+                    <a href="#">Sain & Alam</a>
+                    <a href="#">Thriller</a>
+                </div> -->
+            </div>
+            <div class="footer-heading-container-2">
+                <h2>Bantuan</h2>
+                <div class="bantuan-grid">
+                    <a href="#">FAQ</a>
+                    <a href="#">Kontak Kami</a>
+                    <a href="#">Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+                <!-- <div class="footer-heading footer-5">
+                    <h2>Bantuan</h2>
+                    <a href="#">FAQ</a>
+                    <a href="#">Kontak Kami</a>
+                    <a href="#">Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div> -->
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
 
 <style>
+    footer {
+        padding: 60px 80px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo-container {
+        margin-right: 215px;
+    }
+
+    .footer-heading-container-1 {
+        margin-right: 160px;
+    }
+    .footer-heading-container-1 h2, .footer-heading-container-2 h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    footer .footer-container a {
+        color: #C1C2C4;
+        text-decoration: none;
+    }
+    footer .footer-container a:hover {
+        text-decoration: underline;
+    }
+
+    footer .genre-grid {
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        gap: 13px 28px;
+    }
+
+    footer .bantuan-grid {
+        display: grid;
+        grid-template-columns: max-content;
+        gap: 13px;
+    }
+
+    .footer-logo {
+        margin-bottom: 26px;
+    }
+
+    .footer-logo-container p {
+        color: #C1C2C4;
+    }
+
     .home {
         background-color: #181A1C;
         color: white;
@@ -275,6 +401,15 @@
 
     nav .left {
         gap: 80px;
+    }
+
+    nav .right {
+        gap: 6px;
+    }
+
+    nav .right .profile {
+        width: 40px;
+        height: 40px;
     }
 
     nav .left .menu {
