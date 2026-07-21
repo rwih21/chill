@@ -18,9 +18,17 @@
                 <div class="item">Daftar Saya</div>
             </div>
         </div>
-        <div class="right">
-            <img class="profile" src="./assets/profile-icon.png" alt="">
-            <img class="arrow-down" src="./assets/arrow-down.png" alt="">
+        <div class="right account-menu">
+            <button class="account-trigger">
+                <img class="profile" src="./assets/profile-icon.png" alt="">
+                <img class="arrow-down" src="./assets/arrow-down.png" alt="">
+            </button>
+            <div class="account-dropdown">
+                <div class="account-dropdown-item">Profile Saya</div>
+                <div class="account-dropdown-item">Ubah Jadi Premium</div>
+                <div class="account-dropdown-item">Keluar</div>
+            </div>
+
         </div>
     </nav>
 
@@ -382,7 +390,7 @@
     }
 
     nav .left,
-    nav .right,
+    /* nav .right, */
     nav .left .menu {
         display: flex;
         /* justify-content: space-between; */
@@ -393,9 +401,9 @@
         gap: 80px;
     }
 
-    nav .right {
+    /* nav .right {
         gap: 6px;
-    }
+    } */
 
     nav .right .profile {
         width: 40px;
@@ -413,6 +421,52 @@
 
     nav .left .logo-mob {
         display: none;
+    }
+
+    nav .account-trigger {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    nav .account-menu {
+        position: relative;
+        z-index: 50;
+        /* width: 113px; */
+    }
+
+    nav .account-dropdown {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 4px 0;
+        background-color: #181A1C;
+        font-size: 10px;
+        right: 0;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.15s ease, visibility 0.15s ease;
+        min-width: 113px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    nav .account-dropdown-item {
+        padding: 9px 12px;
+    }
+
+    nav .account-dropdown-item:hover {
+        color: #3254FF;
+    }
+
+    nav .account-menu.open .account-dropdown {
+        opacity: 1;
+        visibility: visible;
     }
 
     .home .continue-watching-section {
@@ -681,3 +735,17 @@
         }
     }
 </style>
+
+<script>
+    const menu = document.querySelector(".account-menu");
+    const trigger = document.querySelector(".account-trigger");
+
+    trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menu.classList.toggle("open");
+
+        if (!menu.contains(e.target)) {
+            menu.classList.remove("open");
+        }
+    });
+</script>
