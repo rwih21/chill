@@ -24,9 +24,9 @@
                 <img class="arrow-down" src="./assets/arrow-down.png" alt="">
             </button>
             <div class="account-dropdown">
-                <div class="account-dropdown-item">Profile Saya</div>
-                <div class="account-dropdown-item">Ubah Jadi Premium</div>
-                <div class="account-dropdown-item">Keluar</div>
+                <a href="#" class="account-dropdown-item">Profile Saya</a>
+                <a href="#" class="account-dropdown-item">Ubah Jadi Premium</a>
+                <a href="./login.html" class="account-dropdown-item">Keluar</a>
             </div>
 
         </div>
@@ -467,6 +467,11 @@
     nav .account-menu.open .account-dropdown {
         opacity: 1;
         visibility: visible;
+    }
+
+    nav .account-menu a {
+        text-decoration: none;
+        color: white;
     }
 
     .home .continue-watching-section {
