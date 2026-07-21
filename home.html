@@ -11,6 +11,7 @@
     <nav>
         <div class="left">
             <img class="logo" src="./assets/Logo.svg" alt="chill">
+            <img class="logo-mob" src="./assets/logo-mobile.png" alt="chill">
             <div class="menu">
                 <div class="item">Series</div>
                 <div class="item">Film</div>
@@ -410,6 +411,10 @@
         width: auto;
     }
 
+    nav .left .logo-mob {
+        display: none;
+    }
+
     .home .continue-watching-section {
         padding: 40px 80px;
     }
@@ -489,7 +494,12 @@
         }
 
         nav .left .logo {
-            height: 28px;
+            display: none;
+        }
+
+        nav .left .logo-mob {
+            display: block;
+            height: 18px;
         }
 
         nav .left .menu {
@@ -497,13 +507,13 @@
         }
 
         nav .left .menu .item {
-            font-size: 13px;
+            font-size: 10px;
             white-space: nowrap;
         }
 
         nav .right .profile {
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
         }
 
         nav .right .arrow-down {
