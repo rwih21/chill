@@ -173,7 +173,7 @@
     </div>
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container footer-desktop">
             <div class="footer-logo-container">
                 <img class="footer-logo" src="./assets/Logo.svg" alt="">
                 <p>@2023 Chill All Rights Reserved.</p>
@@ -219,6 +219,53 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="footer-mob">
+            <div class="footer-logo-container">
+                <img class="footer-logo" src="./assets/Logo.svg" alt="">
+                <p>@2023 Chill All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-accordion" data-footer-accordion>
+                <button class="footer-accordion-toggle" type="button" aria-expanded="false">
+                    <span>Genre</span>
+                    <img class="footer-accordion-icon" src="./assets/arrow-down.png" alt="">
+                </button>
+                <div class="footer-accordion-panel">
+                    <div class="footer-heading">
+                        <a href="#">Aksi</a>
+                        <a href="#">Anak-anak</a>
+                        <a href="#">Anime</a>
+                        <a href="#">Britania</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Fantasi Ilmiah & Fantasi</a>
+                        <a href="#">Kejahatan</a>
+                        <a href="#">KDrama</a>
+                        <a href="#">Komedi</a>
+                        <a href="#">Petualangan</a>
+                        <a href="#">Perang</a>
+                        <a href="#">Romantis</a>
+                        <a href="#">Sains & Alam</a>
+                        <a href="#">Thriller</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-accordion" data-footer-accordion>
+                <button class="footer-accordion-toggle" type="button" aria-expanded="false">
+                    <span>Bantuan</span>
+                    <img class="footer-accordion-icon" src="./assets/arrow-down.png" alt="">
+                </button>
+                <div class="footer-accordion-panel">
+                    <div class="footer-heading">
+                        <a href="#">FAQ</a>
+                        <a href="#">Kontak Kami</a>
+                        <a href="#">Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -266,6 +313,10 @@
 
     .footer-heading-container-2 {
         display: flex;
+    }
+
+    .footer-mob {
+        display: none;
     }
 
     .footer-heading {
@@ -711,22 +762,76 @@
         }
 
         footer {
-            padding: 32px 20px;
+            padding: 24px 20px;
         }
 
-        .footer-container {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 28px;
+        .footer-desktop {
+            display: none;
         }
 
-        .footer-heading-container-1 {
-            flex-wrap: wrap;
-            gap: 24px 32px;
+        .footer-mob {
+            display: block;
         }
 
-        .footer-heading-container-2 {
-            flex-wrap: wrap;
+        .footer-mob .footer-logo-container {
+            margin-bottom: 8px;
+        }
+
+        /* .footer-accordion {
+            border-top: 1px solid #3D4142;
+        }
+
+        .footer-accordion:last-child {
+            border-bottom: 1px solid #3D4142;
+        } */
+
+        .footer-accordion-toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background: none;
+            border: none;
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .footer-accordion-icon {
+            width: 24x;
+            height: 24px;
+            transition: transform 0.2s ease;
+            transform: rotate(-90deg);
+        }
+
+        .footer-accordion.open .footer-accordion-icon {
+            transform: rotate(-180deg);
+        }
+
+        .footer-accordion-panel {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.25s ease;
+        }
+
+        .footer-accordion.open .footer-accordion-panel {
+            grid-template-rows: 1fr;
+        }
+
+        .footer-accordion-panel>* {
+            overflow: hidden;
+        }
+
+        .footer-accordion.open .footer-accordion-panel>* {
+            padding-bottom: 16px;
+        }
+
+        .footer-mob .footer-heading {
+            gap: 10px;
+            margin-top: 10px;
         }
     }
 
@@ -752,5 +857,14 @@
         if (!menu.contains(e.target)) {
             menu.classList.remove("open");
         }
+    });
+
+    document.querySelectorAll("[data-footer-accordion]").forEach((accordion) => {
+        const toggle = accordion.querySelector(".footer-accordion-toggle");
+
+        toggle.addEventListener("click", () => {
+            const isOpen = accordion.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", String(isOpen));
+        });
     });
 </script>
